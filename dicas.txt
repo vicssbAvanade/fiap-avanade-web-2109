@@ -1,0 +1,5 @@
+Não use fontes padrão do navegador
+não use cores primarias
+backgrounf use cinza
+imagens de alta definição bem pensadas .svg
+    com fundo transparente ou foto .webp convertio
