@@ -10,11 +10,13 @@ function escreve(titulo){
     //alert(titulo);
 }
 
-function mudaTitulo(novoTitulo){
-    document.querySelector("h1").innerHTML = novoTitulo;
+function mudaTitulo(target,novoTitulo){
+
+    document.querySelector(target).innerHTML = novoTitulo
+
 }
 
-mudaTitulo("Victor");
+mudaTitulo("h1","Victor");
 
 const mudaTitulo2 =  function(novoTitulo){
     document.querySelector("h2").innerHTML = novoTitulo;
@@ -28,3 +30,12 @@ const relogio = ()=>{
 }
 
 setInterval(relogio, 1000);
+
+const frases = ["A vida é bela", "A vida é curta", "A vida é uma dádiva"];
+
+
+const mudaFrase=(elem, frases, i)=>{
+    mudaTitulo(elem,frases[i]);
+};
+
+setInterval(mudaFrase, 4000);
